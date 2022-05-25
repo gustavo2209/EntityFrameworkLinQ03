@@ -43,6 +43,7 @@ namespace EntityFrameworkLinQ03
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(480, 21);
             this.comboBox1.TabIndex = 0;
+            this.comboBox1.SelectionChangeCommitted += new System.EventHandler(this.comboBox1_SelectionChangeCommitted);
             // 
             // comboBox2
             // 
@@ -52,6 +53,7 @@ namespace EntityFrameworkLinQ03
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(480, 21);
             this.comboBox2.TabIndex = 1;
+            this.comboBox2.SelectionChangeCommitted += new System.EventHandler(this.comboBox2_SelectionChangeCommitted);
             // 
             // comboBox3
             // 
@@ -75,6 +77,7 @@ namespace EntityFrameworkLinQ03
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Combos Perú";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
